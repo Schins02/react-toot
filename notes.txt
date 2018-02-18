@@ -1,0 +1,10 @@
+
+imports
+import React from 'React'
+'go and find that library and assign it to the variable React'
+
+ReactDOM.render(App) 
+passed a class instead of an instance, need to do => ReactDOM.render(<App></App>)
+
+
+
