@@ -5,6 +5,44 @@ import React from 'React'
 
 ReactDOM.render(App) 
 passed a class instead of an instance, need to do => ReactDOM.render(<App></App>)
+wrap class in JSX tags
+
+EXPORTING MODULES => {
+    import stmts 
+    libs vs our own files
+        libs => are namespaced so no need for file ref
+        our own => give actual file reference
+}
+
+functional vs class based component
+
+STATE => {
+    each class based component has its own object called state
+
+    AS SOON AS STATE CHANGES THE COMPONENT AND ALL CHILDREN RE-RENDER
+}
+
+
+CONTROLLED COMPONENT => {
+    has its value controlled by state
+
+
+    controlled input => {
+        more declarative, value of the input is equal to the state...what if we want default input
+    }
+}
+
+DOWNWARDS DATA FLOW => {
+    The most parent compenent that's concerned with a piece
+     of info should be the only component that fetches data
+
+}
+
+PASSING VIDEOS TO VIDEOLIST {
+    pass the list of videos just by defining a property on the jsx tag
+    passing the prop videos to VIDEOLIST
+    Any time that App re-renders via setState, VIDEOLIST will get the new list
+}
 
 
 
